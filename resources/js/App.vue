@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <example></example>
+    <Hello></Hello>
     <el-button @click="visible = true">Click to open me</el-button>
     <el-dialog :visible.sync="visible" title="Hello world">
       <p>You Should Try Element (This is in /resources/js/App.vue)</p>
@@ -9,6 +10,8 @@
 </template>
 <script>
   import Example from './components/Example.vue';
+  import Hello from "./components/Hello";
+
 
   export default {
     name: 'app',
@@ -18,7 +21,8 @@
       }
     },
     components: {
-      Example
+      Example,
+        Hello,
     }
   };
 </script>

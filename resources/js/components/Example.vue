@@ -11,7 +11,7 @@
   export default {
     data () {
       return {
-        msg: 'Welcome to "resources/js/components/Example.vue"',
+        msg: '####',
         radio: '1'
       }
     }
